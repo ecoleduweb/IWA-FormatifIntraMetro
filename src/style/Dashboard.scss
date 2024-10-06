@@ -1,0 +1,63 @@
+.dashboard {
+  background-color: #f0f0f0; // Fond clair pour un look épuré
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); // Léger ombrage pour un effet de carte
+  max-width: 720px; // Limite de largeur pour centrer le contenu
+  margin: 0 auto; // Centre le dashboard
+
+  h3 {
+    color: #003366; // Couleur sombre pour les titres (représentant souvent les couleurs des lignes de métro)
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; // Titre en majuscules pour plus de visibilité
+    border-bottom: 2px solid #003366; // Barre en dessous des titres
+    padding-bottom: 5px;
+  }
+
+  h4 {
+    color: #333; // Couleur pour les informations affichées
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; // Mettre en avant les labels
+    font-family: 'Arial', sans-serif;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #003366; // Changer la couleur du radio button
+  }
+
+  input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: block; // Aligne les inputs en bloc
+  }
+
+  button {
+    background-color: #ff6600; // Couleur vive pour les boutons
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px auto;
+    margin-right: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #cc5200; // Couleur légèrement plus foncée au hover
+    }
+  }
+}

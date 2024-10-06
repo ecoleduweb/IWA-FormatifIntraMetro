@@ -1,0 +1,21 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        width="100px"
+        height="100px"
+      >
+        <path
+          d="M50 10
+           A15 15 0 0 1 50 40
+           A15 15 0 0 1 50 10
+           M30 85
+           Q30 95 50 95
+           Q70 95 70 85
+           L70 55
+           Q70 45 50 45
+           Q30 45 30 55Z"
+          fill="#505050"
+          stroke="white"
+          stroke-width="2"
+        />
+      </svg>

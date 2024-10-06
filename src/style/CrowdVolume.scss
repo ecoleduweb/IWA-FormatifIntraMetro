@@ -1,0 +1,14 @@
+.crowd-volume {
+    display: flex;
+    img {
+        height: 90px;
+        &:nth-child(2) {
+            margin-left: -75px;
+            margin-top: 5px;
+        }
+        &:nth-child(3) {
+            margin-left: -75px;
+            margin-top: 10px;
+        }
+    }
+}

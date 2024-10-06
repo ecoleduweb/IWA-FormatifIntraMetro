@@ -1,0 +1,16 @@
+.user-ui {
+   background-color: black;
+   color: white;
+   &>div {
+    border: 3px solid white;
+    flex:1;
+    padding: 5px;
+   }
+
+   .info-line {
+    margin-left: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+   }
+}
