@@ -29,14 +29,6 @@ const TheMain = () => {
     setLineColor(color);
   };
 
-  const handleIncomingCrowdVolumeChange = (volume: CrowdVolumeEnum) => {
-    setIncomingTrain({ ...incomingTraim, crowdVolume: volume });
-  };
-
-  const handleNextCrowdVolumeChange = (volume: CrowdVolumeEnum) => {
-    setNextTrain({ ...nextTrain, crowdVolume: volume });
-  };
-
   return (
     <main className="wrapper">
       <TheUserUI
@@ -48,8 +40,6 @@ const TheMain = () => {
         onIncomingTrainTimeChange={handleIncomingTrainTimeChange}
         onNextTrainTimeChange={handleNextTrainTimeChange}
         onColorChange={handleColorChange}
-        onIncomingCrowdVolumeChange={handleIncomingCrowdVolumeChange}
-        onNextTrainCrowdVolumeChange={handleNextCrowdVolumeChange}
         // Add the other required props here
       />
     </main>

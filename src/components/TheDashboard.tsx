@@ -5,7 +5,6 @@ import LineColorEnum from '#types/LineColorEnum';
 
 interface PropsInterface {
   onColorChange: (c: LineColorEnum) => void;
-  onIncomingCrowdVolumeChange(v: CrowdVolume): void;
   onNextTrainCrowdVolumeChange(v: CrowdVolume): void;
   onIncomingTrainTimeChange(v: number): void;
   onNextTrainTimeChange(v: number): void;
@@ -13,7 +12,6 @@ interface PropsInterface {
 
 const TheDashboard = ({
   onColorChange,
-  onIncomingCrowdVolumeChange,
   onIncomingTrainTimeChange,
   onNextTrainCrowdVolumeChange,
   onNextTrainTimeChange,
@@ -41,12 +39,10 @@ const TheDashboard = ({
       <div className="flex-between">
         <ASpecificTrain
           title={'Train à venir'}
-          onCrowdVolumeChange={(v) => onIncomingCrowdVolumeChange(v)}
           onTimeChange={(t) => onIncomingTrainTimeChange(t)}
         />
         <ASpecificTrain
           title={'Train suivant'}
-          onCrowdVolumeChange={(v) => onNextTrainCrowdVolumeChange(v)}
           onTimeChange={(t) => onNextTrainTimeChange(t)}
         />
       </div>
